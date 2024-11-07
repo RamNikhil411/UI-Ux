@@ -1,0 +1,289 @@
+
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    padding: 3em;
+    background-color: #E4E0E1;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menubar{
+    display:none;
+}
+nav ul{
+    display:flex;
+    gap:20px;
+    
+
+}
+ul{
+    list-style-type:none;
+}
+nav a{
+    text-decoration: none;
+    color:black
+}
+header .title{
+    font-size: 200%;
+    font-weight: bold;
+}
+.user{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-gap:3px;
+}
+nav li {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    
+}
+nav div{
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+li i {
+    visibility: hidden;
+}
+li:hover i{
+    visibility: visible;
+}
+.user img{
+    height:40px;
+    width: 40px;
+}
+.name{
+    height: fit-content;
+    width:  fit-content;
+    text-align: end;
+}
+ .card img{
+    height:15px;
+ }
+ .cards{
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   grid-gap:20px
+ }
+ .card{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+ }
+ .card button{
+    background-color: black;
+    color: white;
+    display: block;
+    border-radius: 6px;
+   
+    
+ }
+ .content{
+    font-size: 25px;
+    text-align: center;
+ }
+ .cardtitle{
+    color:	#C8C8C8;
+ }
+ .card:hover{
+    background-color:#E8E8E8;
+ }
+ .footer{
+    color: #C8C8C8;
+    text-align: center;
+ }
+ .footer1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+ .apps{
+    background-color: white;
+    margin-top: 10px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding:20px;
+ }
+ .appsheader{
+    display:flex;
+    justify-content: space-between;
+    
+
+ }
+ .options{
+    display:flex;
+    align-items: center;
+    gap:10px
+ }
+ .option{
+    background-color:#F0F0F0;
+    border-radius: 8px;
+    padding: 10px;
+ }
+
+.appsfooter{
+    display:flex;
+    justify-content: space-between;
+    background-color: white;
+    margin-top: 3px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 20px;
+
+}
+.leftfooter{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+.rightfooter{
+    display: flex;
+
+    gap:10px;
+}
+.gridhead{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    color: #94b8b8;
+    padding: 15px;
+}
+.grid1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 7px;
+    margin-top: 20px;
+    background-color: #e6e6ff;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.grid2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 7px;
+    margin-top: 5px;
+    background-color: #e6e6ff;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+table{
+    width:100%;
+
+    margin: 5px;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+th,td{
+    padding:20px
+}
+th{
+    font-weight: 300;
+    color: #94b8b8;
+    text-align: left;
+}
+td{
+    background-color:#E4E0E1;
+}
+.mobilemenu{
+    display:grid;
+    grid-template-columns: auto;
+    position:absolute;
+
+}
+.mobuser{
+    display:flex;
+    gap:10px;
+}
+.mobuser img{
+    width: 20px;
+    height: 20px;
+}
+.mobilemenu a{
+    text-decoration: none;
+    color: black;
+    
+}
+.mobilemenu li{
+    padding: 10px;
+    
+}
+.mobilemenu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+}
+
+@media only screen and (max-width:600px){
+
+
+    .menubar{
+        display: inline-block;
+    }
+    .navbar{
+        display:none
+    }
+    .user{
+        display: none
+    }
+    .header{
+        display:inline;
+        justify-content: start;
+        align-items: start;
+    }
+    header img{
+        height:40px
+    }
+    .cards{
+        display:grid;
+        grid-template-columns: auto;
+    }
+    .apps{
+        max-width: 600px;
+    }
+    .table{
+        overflow-x: auto;
+    }
+    .app{
+        display:none
+    }
+}
+@media (min-width:600px) and (max-width:992px){
+    .menubar{
+        display:inline-block
+    }
+    header img{
+        height: 50px;
+    }
+    .navbar{
+        display:none;
+    }
+    header{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .table{
+        overflow-x: auto;
+    }
+    .cards{
+
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
